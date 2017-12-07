@@ -31,6 +31,9 @@
 ### Protractor测试框架API
 * [英文官方](http://www.protractortest.org/#/api)
 
+### 代码风格及最佳实践
+* [Protractor Style Guide](https://github.com/CarmenPopoviciu/protractor-styleguide)
+
 ## 常见问题
 * `gulp webdriver_update` 不成功，网络问题
 >> 在线下载protractor npm包。修改protractor文件夹里面的路径：替换 `C:\\test\\` 为当前代码文件跟路径路径
