@@ -21,6 +21,7 @@
 ## 搭建开发环境
 * `npm i -g gulp gulp-cli` 使用命令安装gulp
 * `npm i` 按照项目依赖
+* `gulp webdriver_update` 更新selenium相关依赖
 * `gulp` 使用gulp命令启动项目
 * `gulp lint` 检查测试代码规范
 

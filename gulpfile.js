@@ -27,7 +27,7 @@ gulp.task('webdriver_standalone', function (done) {
     return require('gulp-protractor').webdriver_standalone(done);
 });
 // Protractor test runner task
-gulp.task('protractor', ['webdriver_update'], function () {
+gulp.task('protractor', function () {
     var protractor = require('gulp-protractor').protractor;
     gulp.src([])
         .pipe(protractor({
