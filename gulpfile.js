@@ -47,5 +47,5 @@ gulp.task('protractor', ['webdriver_update'], function () {
 
 // Run the project in development mode
 gulp.task('default', (done) => {
-    runSequence('lint', 'protractor', done);
+    runSequence('eslint', 'protractor', done);
 });
