@@ -16,12 +16,13 @@
 
 ## 安装
 * [Node.js](https://nodejs.org/en/)
-* [JAVA](https://www.java.com/en/download)
+* [JAVA](https://www.java.com/en/download) 及JDK（确保JDK按照）
 
 ## 搭建开发环境
 * `npm i -g gulp gulp-cli` 使用命令安装gulp
 * `npm i` 按照项目依赖
 * `gulp webdriver_update` 更新selenium相关依赖
+* 如果需要启动本地 selenium server， 运行`gulp webdriver_standalone`。同时修改protractor.conf.js 添加 本地server配置 `seleniumAddress: 'http://localhost:4444/wd/hub'`
 * `gulp` 使用gulp命令启动项目
 * `gulp lint` 检查测试代码规范
 
@@ -38,6 +39,8 @@
 ## 常见问题
 * `gulp webdriver_update` 不成功，网络问题
 >> 在线下载protractor npm包。修改protractor文件夹里面的路径：替换 `C:\\test\\` 为当前代码文件跟路径路径
+>> 另外，可以设置代理 `set HTTP_PROXY=http://127.0.0.1:1080`，然后运行 `gulp webdriver_update` [参考文章](https://github.com/angular/protractor/pull/966)
 
-
+## 其他文章推荐
+* [Protractor小结](http://blog.csdn.net/wosishui21/article/details/38340527)
 
