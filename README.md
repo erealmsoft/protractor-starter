@@ -16,7 +16,7 @@
 
 ## 安装
 * [Node.js](https://nodejs.org/en/)
-* [JAVA](https://www.java.com/en/download) 及JDK（确保JDK按照）
+* [JAVA](https://www.java.com/en/download) 及JDK（确保JDK安装）
 
 ## 搭建开发环境
 * `npm i -g gulp gulp-cli` 使用命令安装gulp
