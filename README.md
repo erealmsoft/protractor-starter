@@ -25,6 +25,7 @@
 * 如果需要启动本地 selenium server， 运行`gulp webdriver_standalone`。同时修改protractor.conf.js 添加 本地server配置 `seleniumAddress: 'http://localhost:4444/wd/hub'`
 * `gulp` 使用gulp命令启动项目
 * `gulp lint` 检查测试代码规范
+* 测试报告及测试截图位置：`/report/test-report.html` 和 `/report/screenshots`
 
 ## 测试用例编写
 ### Jasmine测试框架API
@@ -36,8 +37,11 @@
 ### 代码风格及最佳实践
 * [Protractor Style Guide](https://github.com/CarmenPopoviciu/protractor-styleguide)
 
+### 配置生成测试报告
+* [PROTRACTOR-JASMINE2-HTML-REPORTER](http://www.testingbay.com/tutorials/protractor-jasmine-reporting/)
+
 ## 常见问题
-* `gulp webdriver_update` 不成功，网络问题
+* `gulp webdriver_update`或者 `gulp webdriver_standalone` 不成功，网络问题
 >> 在线下载protractor npm包。修改protractor文件夹里面的路径：替换 `C:\\test\\` 为当前代码文件跟路径路径
 
 >> 另外，可以设置代理 `set HTTP_PROXY=http://127.0.0.1:1080`，然后运行 `gulp webdriver_update` [参考文章](https://github.com/angular/protractor/pull/966)

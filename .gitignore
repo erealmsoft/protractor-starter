@@ -30,6 +30,7 @@ coverage/
 *.swp
 logs/*.log
 upload/*
+report/
 !upload/readme.md
 
 .vscode/
