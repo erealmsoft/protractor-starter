@@ -39,6 +39,7 @@
 ## 常见问题
 * `gulp webdriver_update` 不成功，网络问题
 >> 在线下载protractor npm包。修改protractor文件夹里面的路径：替换 `C:\\test\\` 为当前代码文件跟路径路径
+
 >> 另外，可以设置代理 `set HTTP_PROXY=http://127.0.0.1:1080`，然后运行 `gulp webdriver_update` [参考文章](https://github.com/angular/protractor/pull/966)
 
 ## 其他文章推荐

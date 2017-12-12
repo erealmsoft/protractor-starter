@@ -14,7 +14,7 @@ describe('Contact Page E2E Tests:', function () {
         expect(browser.getTitle()).toBe('eRealm Info & Tech - Master - Contact');
     });
 
-    function submitInfo(){
+    function submitInfo() {
         element(by.css('.submit-btn')).element(by.css('[type=reset]')).click();
         element(by.model('vm.contact.name')).clear().sendKeys('test name');
         element(by.model('vm.contact.email')).clear().sendKeys('test@erealmsoft.com');
