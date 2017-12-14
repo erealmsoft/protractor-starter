@@ -3,6 +3,7 @@
 describe('Home Page E2E Tests:', function () {
     beforeAll(function () {
         browser.get('/');
+        browser.driver.manage().window().setSize(1200, 1600);
     });
     function changeLanguage(index) {
         element(by.id('split-button')).click();

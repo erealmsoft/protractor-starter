@@ -12,7 +12,10 @@ var config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['tests/*.js'],
     capabilities: {
-        browserName: 'firefox'
+        browserName: 'firefox',
+        // 'moz:firefoxOptions': {
+        //     args: [ "--headless" ]
+        // }
     },
     // multiCapabilities: [{
     //     browserName: 'firefox'
@@ -27,7 +30,6 @@ var config = {
     },
     onPrepare: function () {
         jasmine.getEnv().addReporter(reporter);
-        browser.driver.manage().window().setSize(1200, 1000);
     },
     // Assign the test reporter to each running instance
     // Close the report after all tests finish
