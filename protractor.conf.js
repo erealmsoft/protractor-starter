@@ -9,7 +9,8 @@ var reporter = new HtmlScreenshotReporter({
 // Protractor configuration
 var config = {
     baseUrl: 'https://www.erealmsoft.com',
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    directConnect: true,
+    // seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['tests/*.js'],
     capabilities: {
         browserName: 'firefox',
