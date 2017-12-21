@@ -23,6 +23,7 @@
 * `npm i` 按照项目依赖
 * `gulp webdriver_update` 更新selenium相关依赖
 * 如果需要启动本地 selenium server， 运行`gulp webdriver_standalone`。同时修改protractor.conf.js 添加 本地server配置 `seleniumAddress: 'http://localhost:4444/wd/hub'`
+* 如果不需要启动selenium server，或者希望直接连接browser driver。可以设置直连。`directConnect: true`
 * `gulp` 使用gulp命令启动项目
 * `gulp lint` 检查测试代码规范
 * 测试报告及测试截图位置：`/report/test-report.html` 和 `/report/screenshots`
