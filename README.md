@@ -38,6 +38,18 @@
 ### 代码风格及最佳实践
 * [Protractor Style Guide](https://github.com/CarmenPopoviciu/protractor-styleguide)
 
+### 项目目录结构说明
+* node_modules: 项目依赖的node包文件夹，运行`npm i`后自动生成的系统文件夹
+* report：报告生成的路径，包含测试运行截图及HTML格式的报告。文件夹名称可以更换，具体配置在protractor.config.js的HtmlScreenshotReporter配置里面。本项目配置的是`dest: 'report/screenshots'`
+* tests：测试用例文件夹，包含了项目里面所有的测试用例。文件夹名称可以更换，具体配置在protractor.config.js的specs属性里面。本项目配置的是`specs: ['tests/*.js']`
+* .eslintrc.js: eslint的配置文件。eslint用于检查js代码的语法格式与规范。eslint的配置在gulpfile里面。运行命令 `gulp eslint`来检查当前项目的js规范。和测试本身关系不大。
+* .gitignore: git仓库的配置文件，用于表明那些文件或者文件夹不上传到git仓库中。比如本项目中的`node_modules`和`report`文件夹。
+* gulpfile: 辅助项目的集成工具，本项目中集成了eslint和protractor的配置和运行。gulp的作用是方便了项目的配置和运行，非必须配置。
+* package.json: node项目的标准依赖配置。本项目中，配置了所有用到的node包
+* package-lock.json：安装node包后，自动生成的文件。新版本node的功能，用于固定node包的版本。
+* protractor.conf.js: protractor的配置文件。文件名可以更换，文件名的配置在gulpfile.js里面。本项目配置的是`configFile: 'protractor.conf.js'`
+* README.md：项目说明文档，md文件一般用于markdown文档。
+
 ### 配置生成测试报告
 * [PROTRACTOR-JASMINE2-HTML-REPORTER](http://www.testingbay.com/tutorials/protractor-jasmine-reporting/)
 
